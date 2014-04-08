@@ -9,7 +9,7 @@ app.use(app.router);
 routes(app);
 
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', handlebars({}));
+app.engine('handlebars', handlebars({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
 
