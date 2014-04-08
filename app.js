@@ -12,6 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', handlebars({defaultLayout:'main'}));
 app.set('view engine', 'handlebars');
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 var server = app.listen(8080, function() {
   console.log('Servidor iniciado');
