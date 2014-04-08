@@ -1,11 +1,6 @@
 var http = require('http');
 var url = require('url');
-
-var saludador = {
-  saludar: function(nombre) {
-   return "Hola " + nombre + "!";   
-  }
-}
+var saludador = require('./saludador');
 
 http.createServer(function(req, res) { 
   var query = url.parse(req.url, true).query;
