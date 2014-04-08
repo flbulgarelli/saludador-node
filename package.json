@@ -2,6 +2,9 @@
   "name": "saludador-node",
   "version": "0.0.1",
   "private": true,
+  "scripts" : {
+    "test" : "node_modules/.bin/mocha --require expectations *-spec.js"
+  }, 
   "devDependencies": {
     "mocha": "1.12.1",
     "expectations": "0.2.5"
