@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts" : {
-    "test" : "node_modules/.bin/mocha --require expectations *-spec.js"
+    "test" : "node_modules/.bin/mocha --require expectations spec"
   }, 
   "devDependencies": {
     "mocha": "1.12.1",

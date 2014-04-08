@@ -1,4 +1,4 @@
-var saludador = require('./saludador');
+var saludador = require('../models/saludador');
 
 describe("Saludador", function() {
   it("saluda a la persona dicendo hola", function() {
